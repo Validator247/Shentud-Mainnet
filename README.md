@@ -124,4 +124,16 @@ Create validator
      --gas=auto \
      --from=WRITE_HERE_YOUR_WALLET_ADDRESS
 
+  Edit Validator
+
+      shentud tx staking edit-validator \
+     --chain-id=shentu-2.2 \
+     --commission-rate=0.04 \
+     --from=name_wallet \
+     --gas-prices=0.1uctk \
+     --gas-adjustment=1.5 \
+     --gas=auto \
+     -y
+
+
  #Congratulations - DONE        
