@@ -1,5 +1,11 @@
 # Shentud-Mainnet
 
+
+https://shentu-api.validator247.com/
+https://shentu-rpc.validator247.com/
+https://explorer.validator247.com/shentu/staking
+
+
 Update your server
 
     sudo apt update && sudo apt upgrade -y
