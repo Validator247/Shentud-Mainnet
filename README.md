@@ -107,11 +107,11 @@ Checklogs
 
 Create Wallet
 
-    shentud keys add name_wallet
+    shentud keys add wallet
 
 Recover Wallet
 
-    shentud keys add name_wallet --recover
+    shentud keys add wallet --recover
 
 Create validator
 
@@ -130,14 +130,14 @@ Create validator
      --gas-prices=0.1uctk \
      --gas-adjustment=1.5 \
      --gas=auto \
-     --from=WRITE_HERE_YOUR_WALLET_ADDRESS
+     --from=wallet
 
   Edit Validator
 
       shentud tx staking edit-validator \
      --chain-id=shentu-2.2 \
      --commission-rate=0.04 \
-     --from=name_wallet \
+     --from=wallet \
      --gas-prices=0.1uctk \
      --gas-adjustment=1.5 \
      --gas=auto \
