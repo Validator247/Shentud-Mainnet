@@ -54,11 +54,11 @@ Set minimum gas price
 
 Download genesis
 
-    wget -O $HOME/.shentud/config/genesis.json "https://services.shentu-2.2.shentu.aviaone.com/genesis.json"
+    wget https://raw.githubusercontent.com/Validator247/Shentud-Mainnet/main/genesis.json
 
 Download addrbook
 
-    wget -O $HOME/.shentud/config/addrbook.json "https://services.shentu-2.2.shentu.aviaone.com/addrbook.json"
+    wget https://raw.githubusercontent.com/Validator247/Shentud-Mainnet/main/addrbook.json
 
 Add Seeds
 
