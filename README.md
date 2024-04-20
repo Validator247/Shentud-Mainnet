@@ -42,7 +42,7 @@ check version
 
 Set-variables  
 
-    SHENTU_MONIKER="Replace_AVIAONE_by_your_name"
+    SHENTU_MONIKER="Replace_Node_your_name"
 
 Initialize the node
 
@@ -93,7 +93,7 @@ SNAPSHOT
     sudo systemctl stop shentud 
     cp $HOME/.shentud/data/priv_validator_state.json $HOME/.shentud/priv_validator_state.json.backup
     shentud tendermint unsafe-reset-all --home $HOME/.shentud --keep-addr-book
-    wget -c https://services.shentu-2.2.shentu.aviaone.com/shentu-2.2_2024-03-30.tar.gz -O - | tar -xz -C $HOME/.shentud
+    wget -c https://services.shentu-2.2.shentu.aviaone.com/shentu-2.2_2024-04-20.tar.gz -O - | tar -xz -C $HOME/.shentud
     mv $HOME/.shentud/priv_validator_state.json.backup $HOME/.shentud/data/priv_validator_state.json
     sudo systemctl start shentud && sudo journalctl -u shentud -f --no-hostname -o cat
 
