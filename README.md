@@ -33,7 +33,7 @@ Install App and build
     cd $HOME
     git clone https://github.com/certikfoundation/shentu.git 
     cd shentu 
-    git checkout v2.9.0 
+    git checkout v2.10.0 
     make install
 
 check version
@@ -93,7 +93,7 @@ SNAPSHOT
     sudo systemctl stop shentud 
     cp $HOME/.shentud/data/priv_validator_state.json $HOME/.shentud/priv_validator_state.json.backup
     shentud tendermint unsafe-reset-all --home $HOME/.shentud --keep-addr-book
-    wget -c https://services.shentu-2.2.shentu.aviaone.com/shentu-2.2_2024-04-20.tar.gz -O - | tar -xz -C $HOME/.shentud
+    wget -c https://services.shentu-2.2.shentu.aviaone.com/shentu-2.2_2024-05-30.tar.gz -O - | tar -xz -C $HOME/.shentud
     mv $HOME/.shentud/priv_validator_state.json.backup $HOME/.shentud/data/priv_validator_state.json
     sudo systemctl start shentud && sudo journalctl -u shentud -f --no-hostname -o cat
 
@@ -143,5 +143,11 @@ Create validator
      --gas=auto \
      -y
 
+
+Unjail
+
+    shentud tx slashing unjail --chain-id=shentu-2.2 --from wallet -y
+
+            
 
  #Congratulations - DONE        
